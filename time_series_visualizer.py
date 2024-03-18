@@ -61,7 +61,6 @@ def draw_box_plot():
     df_box['year'] = [d.year for d in df_box.date]
     df_box['month'] = [d.strftime('%b') for d in df_box.date]
 
-    # Rysuj wykresy pudełkowe (korzystając z Seaborn)
     months_in_order = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
     fig = plt.figure(figsize=(15,5))
